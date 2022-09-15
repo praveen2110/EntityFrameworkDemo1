@@ -20,6 +20,7 @@ namespace DBFirstApproach
         public EF_Demo_DBEntities()
             : base("name=EF_Demo_DBEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
